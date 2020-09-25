@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Week 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <h1>Week 2</h1>
+    <h2>Notes</h2>
+    <ul>
+      <li>
+        Computed Properties can be made like this:
+        <code
+          >const hulk = { name: 'Hulk', ['catch' + 'Phrase']: 'Hulk Smash!'
+          };</code
+        >
+      </li>
+      <li>
+        The script above would make an object like so:
+        <code>{ name: 'Hulk', catchPhrase: 'Hulk Smash!' }</code>
+      </li>
+      <li>
+        You can use expressions such as ternary operators when creating objects
+        like so
+        <code
+          >const captainBritain = { name: 'Captain Britain', hero: bewitched ?
+          false : true };</code
+        >
+      </li>
+      <li>JSON stands for Javascript Object Notation</li>
+      <li>The Epoch is 1st January 1970</li>
+      <li>
+        jQuery is a popular JavaScript framework that makes it very easy to find
+        elements on a page using a CSS-style syntax.
+      </li>
+      <li>
+        Warning: Be careful when updating className. Changing the className
+        property of an element by assignment will overwrite all other classes
+        that have already been set on the element. This problem can be avoided
+        by using the classList property instead.
+      </li>
+      <li>
+        The classList property is a list of all the classes an element has. It
+        has a number of methods that make it easier to modify the class of an
+        element. It’s supported in all modern browsers and in Internet Explorer
+        from version 10 onwards.
+      </li>
+      <li>
+        When using classList the add/remove method can be used to add/remove a
+        class to an element without overwriting any classes that already exist.
+      </li>
+      <li>removeEventListener removes an removes an event listener</li>
+      <li>addEventListener adds a event listener</li>
+      <li>
+        Note that you shouldn't use anonymous functions as an argument to
+        addEventListener() if you want to remove it later. This is because there
+        needs to be a reference to the same function name in the arguments of
+        removeEventListener().
+      </li>
+    </ul>
+
+    <h3>Questions:</h3>
+    <ul>
+      <li>
+        Why does everyone use JSON if you cannot attach methods to it? Is it
+        faster?
+      </li>
+      <li>
+        Thats interesting that vanilla js has computed properties. If this is
+        the case why do so many frameworks like have their own way of creating
+        computed properties?
+      </li>
+      <li>
+        Is Javascript as fast as a computer code language? What would be the
+        fastest language to handle complex math operations?
+      </li>
+      <li>
+        It says in the reading that " there is a potential problem looming in
+        2038 when the number of seconds since the Epoch will be greater than
+        2,147,483,647, which is the maximum value that many computers can deal
+        with as a signed 32-bit integer" is this really a problem to be
+        concerned about? Don't most people have 64 bit operating systems?
+      </li>
+      <li>
+        Quick off topic question will we be using Nodejs and express in this
+        course?
+      </li>
+      <li>
+        What programing language do you use in your job. What have you found to
+        be most valuable?
+      </li>
+    </ul>
+  </body>
+</html>
