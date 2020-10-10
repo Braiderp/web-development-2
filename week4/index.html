@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Week 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <h1>Week 4</h1>
+    <h2>Notes</h2>
+    <ul>
+      <li>You can access a form via the name attribute like so: <code>const form = document.forms.search;</code> in this case the form is called search</li>
+      <li>You can set attributes in a form via javascript like so: <code>form.action = '/an/other.url'</code></li>
+      <li>You can also set them via html like so <code><form method="post" action="someurl"></code></li>
+      <li>You can also add events to these elements like so <code>const input = form.elements.searchInput;
+        input.addEventListener('focus', () => alert('focused'), false);</code></li>
+        <li>You can use the required attribute in html to require a value but always validate via backend as well.</li>
+        <li>Constructor functions are good for modeling data in the real world like so <code>const dice = {
+          sides: 6,
+          roll() {
+              return Math.floor(this.sides * Math.random() + 1)
+          }    
+      }</code></li>
+      <li>Or this <code>const Dice = function(sides=6){
+        this.sides = sides;
+        this.roll = function() {
+            return Math.floor(this.sides * Math.random() + 1)
+        }
+    }</code></li>
+    <li>some examples of built in constructor functions are <code>Object</code> and <code>Array</code></li>
+    <li>ES6 supports for of! <code>    for(const friend of this.friends) {
+      console.log(`${friend.name} is friends with ${this.name}`);
+  };</code></li>
+    </ul>
+
+    <h3>Questions:</h3>
+  <ul>
+   <li>Are classes common in modern js? In all my years of programing I have never used them in js although plenty of times in Python and other languages. I honestly thought you had to have typescript to use them</li>
+   <li>I understand that classes are new to ES6 so does that mean you have to run babel to get older versions of javascript to support them in your code?</li>
+  <li>What is the big o notation of for of?</li>
+  <li>Is <code>for of</code> faster than <code>for</code> or <code>forEach?</code> in my experience <code>for</code> is generally faster than <code>forEach</code>. I would be curious to know where it stands on speed</li>
+  </ul>
+  </body>
+</html>
