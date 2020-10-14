@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Week 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <h1>Week 5</h1>
+    <h2>Notes</h2>
+    <p>"ECMAScript 5 introduced a strict mode that produces more exceptions and warnings and prohibits the use of some deprecated features. This is due to the fact that strict mode considers coding practices that were previously accepted as just being 'poor style' as actual errors.
+
+      Increasing the chance of errors might seem like a bad idea at first, but it’s much better to spot errors early on, rather than have them cause problems later. Writing code in strict mode can also help improve its clarity and speed, since it follows conventions and will throw exceptions if any sloppy code practices are used.
+      
+      Not using strict mode is often referred to as 'sloppy mode' as it’s forgiving of sloppy programming practices. Strict mode encourages a better quality of JavaScript to be written that befits a ninja programmer, so its use is recommended."</p>
+
+      <p>You can use strict mode at the top of a file like so: <code>'use strict';</code></p>
+      <p>Or use it in a function like so: 
+        <code>function strictly(){
+        'use strict';
+        // function code goes here</code></p>
+        <p>Feature detection. You can detect if a feature exists like so in javascript: <code>
+          if (window.holoDeck) {
+            virtualReality.activate();
+        }
+        </code> if holoDeck exists on window the code will run</p>
+        <p>Chrome, Firefox, Safari and Opera all have debugging tools built in.</p>
+    <h3>Questions:</h3>
+  <ul>
+    <li>Is strict mode automatically used in most popular frameworks (Vue, React ect.)?</li>
+    <li>Can you think of a time where strict mode has personally helped you in your coding or a specific problem it helped you solve?</li>
+    <li>Do you still find the debugger to be useful when you are using webpack?</li>
+    <li>If I understand it correctly doesn't webpack minify your code making the debugger virtually useless other than console logs? Is this true?</li>
+    <li>Is there a better way of detecting features other than if statements? Do you ever see us getting universal browser support?</li>
+  </ul>
+  </body>
+</html>
