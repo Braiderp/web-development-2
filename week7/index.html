@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Week 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <h1>Week 7</h1>
+    <h2>Notes</h2>
+    <p>Promises are a way to wait for code to complete before moving on.</p>
+    <p>You can use <code>Async/Await</code> to stop a promise until it completes</p>
+    <p>for example <code>const result =await database.query(sqlStatement)</code> the result variable contains the query result and would stop code until the query completed. Now you can safely use the result object</p>
+    <p>Ajax stands for Asynchronous Javascript and XML</p>
+    <p>You can make calls to using the fetch api like so:
+        <code>
+            const url = 'https:example.com/data';
+fetch(url)
+.then((response) => {
+    if(response.ok) {
+        return response;
+    }
+    throw Error(response.statusText);
+})
+.then( response => // do something with response )
+.catch( error => console.log('There was an error!') )
+        </code>
+    </p>
+    <h3>Questions:</h3>
+  <ul>
+    <li>Why would you use the fetch api over axios?</li>
+    <li>Is fetch the old way of doing things? For example people use async await over .then() in my experience.</li>
+    <li>When have you used the fetch api?</li>
+    <li>How do you handle errors inside promises you build do you just do a try/catch? How do you make sure your errors bubble up?</li>
+  </ul>
+  </body>
+</html>

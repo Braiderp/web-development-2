@@ -23,6 +23,10 @@ function init() {
     {
       label: "Todo App",
       url: "todo/index.html"
+    },
+    {
+      label: "Week7 Notes",
+      url: "week7/index.html"
     }
   ];
 
