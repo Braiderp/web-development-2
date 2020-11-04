@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Week 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <h1>Week 8</h1>
+    <h2>Notes</h2>
+    <p>Canvas is a way to "draw" content on to an html element.</p>
+    <p>You should never style the width and height of a canvas with pure css "because the width and height attributes determine how large the canvas’s coordinate system is. If we don’t specify width and height , the canvas element will default to a width of 300 and a height of 150. If we set the width and height for a canvas only in CSS, the canvas element will be 300 by 150, and the CSS properties will simply determine how large the box is that displays the image."</p>
+    <p>You can do 3d renderings with webgl</p>
+    <p>You can draw images to them</p>
+    <p>You can take a HD image using canvas.toDataURL()</p>
+    <p>You can draw a circle on a canvas like so:
+        <code>
+            function drawCircle(canvas) {
+                var canvas = document.getElementById("myCanvas");
+                var context = canvas.getContext("2d");
+                context.beginPath();
+                context.arc(50, 50, 30, 0, Math.PI*2, true);
+            }
+        </code>
+    </p>
+    <h3>Questions:</h3>
+  <ul>
+    <li>I use canvas in my work all the time. Have you personally done much with them?</li>
+    <li>Do you happen to know if there is a way to render canvas objects server side?</li>
+    <li>Off topic question sort of but do you know how to get headless chrome to run a video so you can automate tasks like taking screenshots of a canvas that has a video background? I am always able to get headless chrome running however chromium does not run mp4 files.</li>
+    <li>Is there any way to run the functions of a canvas server side? For instance lets say I had a video I was drawing to a canvas and I draw some stuff on top of it but I also want to take screenshots of the canvas and compile a video. I could do this client side but its slower than a turtle and I want it to be quick any suggestions? </li>
+  </ul>
+  </body>
+</html>
