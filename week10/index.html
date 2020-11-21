@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Week 10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <h1>Week 10</h1>
+    <h2>Notes</h2>
+    <p>You can validate forms in the following ways</p>
+    <ul>
+      <li>
+        required: Specifies whether a form field needs to be filled in before
+        the form can be submitted.
+      </li>
+      <li>
+        minlength and maxlength: Specifies the minimum and maximum length of
+        textual data (strings)
+      </li>
+      <li>
+        Max and Min Specifies whether the data needs to be a number, an email
+        address, or some other specific preset type.
+      </li>
+      <li>
+        pattern: Specifies a regular expression that defines a pattern the
+        entered data needs to follow.
+      </li>
+    </ul>
+
+    Example:
+    <code>
+      <form>
+        <label for="choose"
+          >Would you prefer a banana or cherry? (required)</label
+        >
+        <input id="choose" name="i_like" required />
+        <button>Submit</button>
+      </form>
+    </code>
+    <p>Fetch is used to make http requests via javascript</p>
+    <p>Example of fetch:</p>
+    <code
+      >fetch('http://example.com/movies.json') .then(response =>
+      response.json()) .then(data => console.log(data));
+    </code>
+    <p>the following example logs the movies data in json format</p>
+    <p>posting json data:</p>
+    <code
+      >const data = { username: 'example' };
+      fetch('https://example.com/profile', { method: 'POST', // or 'PUT'
+      headers: { 'Content-Type': 'application/json', }, body:
+      JSON.stringify(data), }) .then(response => response.json()) .then(data =>
+      { console.log('Success:', data); }) .catch((error) => {
+      console.error('Error:', error); });
+    </code>
+    <p>Uploading a file:</p>
+    <code
+      >const formData = new FormData(); const fileField =
+      document.querySelector('input[type="file"]'); formData.append('username',
+      'abc123'); formData.append('avatar', fileField.files[0]);
+      fetch('https://example.com/profile/avatar', { method: 'PUT', body:
+      formData }) .then(response => response.json()) .then(result => {
+      console.log('Success:', result); }) .catch(error => {
+      console.error('Error:', error); });
+    </code>
+    <p>Questions:</p>
+    <ul>
+      <li>Why use fetch over axios?</li>
+      <li>
+        When have you ever used html validation? Wouldn't it be better to handle
+        this in javascript as you can edit html in the inspector?
+      </li>
+      <li>
+        What have you found to be the most tricky thing about form validation?
+      </li>
+    </ul>
+  </body>
+</html>
